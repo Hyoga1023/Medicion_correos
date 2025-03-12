@@ -1,0 +1,35 @@
+/* sweetalert2-custom.css */
+
+.custom-swal-popup {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border-radius: 8px;
+  }
+  
+  .custom-swal-title {
+    color: var(--color-cuaternario);
+    font-weight: bold;
+  }
+  
+  .custom-swal-content {
+    color: var(--color-blanco);
+  }
+  
+  .custom-swal-confirm-button {
+    background-color: var(--color-terciario);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .custom-swal-cancel-button {
+    background-color: var(--color-cuaternario);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  

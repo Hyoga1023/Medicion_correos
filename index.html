@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./Reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./sweetalert2-custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./img/Logo Fondo Blanco Con Las Letras IH.png" type="image/x-icon">
+    <title>Medición Correos Inhouse</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container header-izquierdo">
+            <h1 class="logo_proteccion">Protección</h1>
+        </div>
+        <div class="header-container header-central">
+            <p>Medición Correos Inhouse</p>
+        </div>
+    </header>
+    <main>
+        <section class="cabecera">
+            <div class="contenedor_cabecera cabecera-izquierda">
+                <img src="./img/Chibi2.png" alt="Mujer_Chibi">
+            </div>
+            <div class="contenedor_cabecera cabecera-central">
+                <h2 class="titulo_principal">Formulario de Registro Inhouse</h2>
+            </div>
+            <div class="contenedor_cabecera cabecera-derecha">
+                <img src="./img/Chibi3.png" alt="dibujo hombre Chibi">
+            </div>
+        </section>
+        <section class="formulario">
+            <form id="registro-form">
+                <label for="usuario">Usuario Inhouse</label>
+                <select id="usuario" name="usuario" required>
+                    <option value="">Seleccione...</option>
+                    <option value="CAMARTIN">CAMARTIN</option>
+                    <option value="LBARRAGA">LBARRAGA</option>
+                </select>
+                <label for="tipo-id">Tipo de ID</label>
+                <select id="tipo-id" name="tipo-id" required>
+                    <option value="">Seleccione...</option>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="NIT">NIT</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="PPT">Permiso Temporal de Permanencia</option>
+                </select>
+                <label for="numero-id">Número de Identificación</label>
+                <input type="text" id="numero-id" name="numero-id" placeholder="Ingrese el número de identificación"
+                    required>
+                <label for="nombre">Nombre del Afiliado o Empresa</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre" required>
+                <label for="observacion">Observación</label>
+                <textarea id="observacion" name="observacion" rows="3"
+                    placeholder="Escriba las observaciones"></textarea>
+                <div class="botones1">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <div class="logo_empresas">
+            <img class="logo_e" src="img/Yara.jpg" alt="Logo Yara" data-empresa="Yara">
+            <img class="logo_e" src="img/exito-logo-4AC4CFF6A0-seeklogo.com.png" alt="Logo Éxito" data-empresa="Éxito">
+            <img class="logo_e" src="img/Ecopetrol.jpg" alt="Logo Ecopetrol" data-empresa="Ecopetrol">
+            <img class="logo_e" src="img/Smurfit.jpg" alt="Logo Smurfit" data-empresa="Smurfit">
+            <img class="logo_e" src="img/Carvajal.jpg" alt="Logo Carvajal" data-empresa="Carvajal">
+            <img class="logo_e" src="img/Tecnoquimicas.jpg" alt="Logo Tecnoquímicas" data-empresa="Tecnoquímicas">
+            <img class="logo_e" src="img/Ingredion-Logo-Vector.jpg" alt="Logo Ingredion" data-empresa="Ingredion">
+        </div>
+        
+        <div class="botones">
+            <button type="button" id="descargar">Descargar Archivo</button>
+            <button type="button" id="borrar">Borrar Archivo</button>
+        </div>
+        <div class="separador"></div>
+    </main>
+    <footer>
+        <div class="footer1">
+            <p>&copy; 2025 Desarrollado por Cesar Martinez - Todos los derechos reservados.</p>
+            <img class="logo" src="img/logo_letra_blanca_sin_fondo.png" alt="Logo Desarrollador">
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script type="module" src="./main.js"></script>
+
+</body>
+
+</html>
